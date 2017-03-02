@@ -1,0 +1,59 @@
+#navStrip {
+    padding: 5px 5px;
+    overflow: hidden;
+   	border-bottom: 2px solid #D3D3D3;
+    position: relative;
+    z-index: 1;
+}
+
+#nav_advanced {
+    float: right;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+#navStrip h1 {
+    display: inline;
+    overflow: hidden;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+
+#nav_advanced button {
+
+    display: inline-block;
+    background: 0 0;
+    color: #e8dec7;
+    border: none;
+    margin: 0 10px;
+    position: relative;
+    text-transform: capitalize;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0 32px 0 0 #841f1e;
+    transition: .2s;
+}
+
+button {
+    font: 99% sans-serif;
+    width: auto;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.name {
+	color: #e8dec7;
+	display: inline-block;
+	position: relative;
+	font-size: 100%;
+
+}
