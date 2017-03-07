@@ -1,16 +1,3 @@
-
-var grid = [
-        [0,0,0,1,5,0,0,7,0],
-        [1,0,6,0,0,0,8,2,0],
-        [3,0,0,8,6,0,0,4,0],
-        [9,0,0,4,0,0,5,6,7],
-        [0,0,4,7,0,8,3,0,0],
-        [7,3,2,0,0,6,0,0,4],
-        [0,4,0,0,8,1,0,0,9],
-        [0,1,7,0,0,0,2,0,8],
-        [0,5,0,0,3,7,0,0,0]
-    ];
-
 // recursive algorithm solver, that takes a gird, row and column
 function solver(grid, row, col) {
     var cell = openlocation(grid, row, col);
@@ -22,19 +9,19 @@ function solver(grid, row, col) {
         return true;
     }
 
-    //Iterate over tn
+    //Iterate over
     for (var num = 1; num <= 9; num++) {
-        if ( checkConflicts(grid, row, col, num) ) {   
+    	//Check to see if correct number
+        if (checkConflicts(grid, row, col, num) ) { 
+
             grid[row][col] = num;
-            if ( solver(grid, row, col) ) {                
+            if (solver(grid, row, col)) {                
                 return true;
             }
-
             // mark cell as empty (with 0)    
             grid[row][col] = 0;
         }
     }
-
     //start the backtrack
     return false;
 }
@@ -47,10 +34,8 @@ function openlocation(grid, row, col) {
 
 
     while (!done) {
-
         if (row == 9) {
             done = true;
-
         }else{
         	//If the rown and col == 0 then assign the value to the result array
             if (grid[row][col] == 0){
@@ -130,5 +115,3 @@ function checkConflicts(grid, row, col, num) {
     return isValidRow(grid, row, num) && isValidCol(grid, col, num) && isValidBox(grid, row, col, num);
 }
 
-solver(grid, 0, 1);
-printOutput(grid);
