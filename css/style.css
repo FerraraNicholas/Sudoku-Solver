@@ -1,16 +1,3 @@
-#navStrip {
-    padding: 5px 5px;
-    overflow: hidden;
-   	border-bottom: 2px solid #D3D3D3;
-    position: relative;
-    z-index: 1;
-}
-
-#nav_advanced {
-    float: right;
-    font-weight: 700;
-    line-height: 28px;
-}
 
 h1 {
     display: block;
@@ -19,41 +6,60 @@ h1 {
     -webkit-margin-after: 0.67em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
+    font-weight: bold;
 }
 
-#navStrip h1 {
-    display: inline;
-    overflow: hidden;
-    margin-right: 1em;
-    vertical-align: middle;
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
 }
 
+#demo {
+    text-align: center;
+    font-size: 1.5em;
+    word-spacing: 10000px;
 
-#nav_advanced button {
 
-    display: inline-block;
-    background: 0 0;
-    color: #e8dec7;
-    border: none;
-    margin: 0 10px;
-    position: relative;
-    text-transform: capitalize;
-    border-radius: 25px 25px 0 0;
-    box-shadow: 0 32px 0 0 #841f1e;
-    transition: .2s;
 }
 
-button {
-    font: 99% sans-serif;
-    width: auto;
-    overflow: visible;
-    cursor: pointer;
+.codrops-header {
+    padding: 2em 1em 2em;
+    text-align: center;
 }
 
-.name {
-	color: #e8dec7;
-	display: inline-block;
-	position: relative;
-	font-size: 100%;
+.codrops-header h1 {
+    margin: 0.5em 0 0;
+    letter-spacing: -1px;
+    font-size: 3em;
+    line-height: 1;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 3em 0;
+}
+
+body {
+    font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+    color: #4b0f31;
+    background-color: #f1e5e6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.box {
+    background-color: #dfc8ca;
+    padding: 10.25rem 2.25rem;
+}
+
+.small-box {
+	background-color: #f1e5e6;
+    padding: 12.25rem 2.25rem;
 
 }
