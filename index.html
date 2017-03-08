@@ -9,36 +9,37 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-
 <body>
-  <header>
-    <div id = "navStrip">
-      <h1>Sudoku Solver Application</h1>
-      <div id = nav_advanced>
-        <h1 class = "name">Nicholas Ferrara</h1>
-      </div>
-    </div>
+<div class = "container">
+  <header class = "codrops-header">
+  <h1 class>Sudoku Solver</h1>
+    <p>Web Application</p>
   </header>
 
-  <main>
-    <input type = "file" id = "openFile" />
+<div class = "content">
+  <div class = "box">
+    <input type = "file" id = "openFile"/>
     <br>
     <pre id = "Filecontents"></pre>
+    
+    <div class = "small-box">
+        <div> 
+              <p class id = "demo"></p>  
+        </div>
 
-    <p class = "col-md-6" id = "demo"></p>
+    </div>
 
-
-
-
-
-
-
-  </main>
-
-  
-  <script src="app.js"></script>
-  <script src="sudokusolver.js"></script>
-
+</div>
+</div>
+</div>
+  <script src="js/fileoperations.js"></script>
+  <script src="js/solver.js"></script>
+  <script src="js/openlocation.js"></script>
+  <script src="js/print.js"></script>
+  <script src="js/validcol.js"></script>
+  <script src="js/validrow.js"></script>
+  <script src="js/validbox.js"></script>
+  <script src="js/conflict.js"></script>
 </body>
 </html>
 
